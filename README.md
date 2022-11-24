@@ -1,4 +1,7 @@
-<h3 align="center">A passionate frontend developer from India</h3>
+<h1 align="center">Hi 👋, I'm Valentino De Blas</h1>
+<h3 align="center">A passionate frontend developer from Argentina</h3>
+
+- 🔭 I’m currently working on **Anakin-Medias**
 
 - 📫 How to reach me **tinodeblascaballer@gmail.com**
 
