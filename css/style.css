@@ -49,28 +49,6 @@ nav .navbar .navbar-dark-bg-dark{
 
 
 
-
-/* header nav ul{
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-header nav ul li a{
-    margin: 5px 10px 5px 10px;
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    font-size: 25px;
-    text-transform: uppercase;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    transition: 0.5s;
-}
-header nav ul li a:hover{
-    color: rgb(53, 138, 111);
-} */
-
-
 /*-----MAIN INDEX-----*/
 main{
     grid-area: main;
@@ -505,7 +483,7 @@ footer {
 }
 
 
-/* MEDIA QUERY */
+/* MEDIA QUERY ----INICIO*/
 @media screen and (max-width:1646px){
     .gridGaleria{
         margin-left: 20px;
@@ -522,6 +500,10 @@ footer {
         grid-template-rows: 300px 300px 300px;
         row-gap: 20px;
         column-gap: 10px;
+        margin-bottom: 300px;
+    }
+    footer{
+        width: auto;
     }
 }
 @media screen and (max-width:970px){
@@ -532,21 +514,85 @@ footer {
     row-gap: 20px;
     column-gap: 10px;
     }
+    footer{
+        width: auto;
+        margin-top: 350px;
+    }
+    footer h4{
+        font-size: 15px;
+    }
+    footer p{
+        font-size: 10spx;
+    }
 }
-@media screen and (max-width:935px) {
+@media screen and (max-width:920px) {
     .gridGaleria{
         grid-template-columns: repeat(2,1fr);
         grid-template-rows: 300px 300px;
         row-gap: 20px;
         column-gap: 10px;
+        margin-bottom: 300px;
         }
 }
-@media screen and (max-width: 750px) {
-    .navegaProductos{
+@media screen and (max-width: 830px) {
+    .navega div{
         display: flex;
-        flex-flow: wrap;
-        justify-content: center;
+        flex-direction: column;
     }
-    
+}
+@media screen and (max-width: 640px){
+    .bienvenida{
+        width: auto;
+        height:85vh;
+    }
+    .bienvenidaTitulo{
+        font-size: 30px;
+    }
+    .bienvenidaParrafo{
+        font-size: 15px;
+    }
+    .gridGaleria{
+        margin-left: 20px;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: 300px;
+        row-gap: 20px;
+        column-gap: 10px;
+    }
+    footer{
+        width: auto;
+        margin-top: 1600px;
+    }
+}
+
+
+
+/* MEDIA QUERY ----NOSOTROS*/
+@media screen and (max-width:1400px){
+    .imagenNosotros{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        perspective: 400px;
+    }
+    .imagenNosotros h2{
+        font-size: 60px;
+    }
+}
+@media screen and (max-width:1230px){
+    .imagenNosotros{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        perspective: 300px;
+    }
+    .imagenNosotros h2{
+        font-size: 40px;
+    }
+    .gridGaleriaUstedes{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: 300px;
+        gap: 15px;
+        }
 }
 
