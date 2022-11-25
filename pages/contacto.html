@@ -4,50 +4,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <title> Anakin Medias-Contacto </title>
 </head>
 <body>
     <header> 
-        <a class="logo" href="../index.html"> <img src="../img/ANAKIN.png" alt="Logo"></a>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="../pages/producto.html">Productos</a></li>
-                <li><a href="../pages/nosotros.html">Sobre Nosotros</a></li>
-                <li><a href="../pages/carrito.html">Carrito</a></li>
-                <li><a href="../pages/contacto.html">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img src="../img/ANAKIN.png" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../pages/producto.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../pages/nosotros.html">Sobre Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../pages/carrito.html">Carrito</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
-        <a class="carro" href="../pages/carrito.html"> <img src="../img/carrito_white.png" alt="carrito"></a>
     </header>
-    <main> 
+    <main class="contacto"> 
         <section class="dudas"> 
             <h1>¡Consulta tus Dudas!</h1>
-            <form action="" method="" enctype="" ></form>
-                <div class="dudasNombre">
-                    <label for="nombre">Nombre y Apellido</label>
-                    <input type="text" name="nombre" placeholder="Juan Ramires">
-                </div>
-                <div class="dudasEmail">
-                    <label for="correo">Email</label>
+            <form action="" method="" enctype="" >
+                    <input type="text" name="nombre" placeholder="Juan">
+                    <input type="text" name="apellido" placeholder="Ramires">
                     <input type="email" name="correo" placeholder="ejemplo@gmail.com">
-                </div>
-                <div class="dudasPais">
-                    <select name="select" id="">Nacionalidad>
-                        <option value="">Argentina</option>
-                        <option value="">Colombia</option>
-                        <option value="">Brasil</option>
-                        <option value="">Chile</option>
-                        <option value="">Uruguay</option>
-                    </select>
-                </div>
-                <div class="dudasProblema">
-                    <h2>Dejanos tu duda aca!</h2>
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
-                    <input type="submit">
-                </div>
-        </section>
+                    <textarea name="mensaje" placeholder="Escriba aqui su mensaje"></textarea>
+                    <input type="button" value="ENVIAR" id="boton">
+            </form>
+    </section>
     </main>
     <footer>
         <footer class="footerStyle">
@@ -63,5 +67,8 @@
                 <p>Todos los derechos reservados</p>
             </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
 </html>
