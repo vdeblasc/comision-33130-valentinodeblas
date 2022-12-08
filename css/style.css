@@ -1,21 +1,20 @@
-*{
+* {
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
 }
 
-.gridContenedor{
-    grid-template-columns: repeat(3,1fr);
+.gridContenedor {
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 100px auto 300px;
-    grid-template-areas: 
-    "header header header"
-    "main main main"
-    "footer footer footer";
+    grid-template-areas:
+        "header header header"
+        "main main main"
+        "footer footer footer";
 }
 
-
 /*-----HEADER-----*/
-header{
+header {
     background-color: #000000;
     /* position: sticky;
     top: 0; */
@@ -27,38 +26,43 @@ header{
     padding: 20px;
     grid-area: header; */
 }
-header a img{
+
+header a img {
     width: 150px;
     height: 150px;
 }
-.container-fluid{
+
+.container-fluid {
     background-color: #000000;
 }
-nav .navbar .navbar-dark-bg-dark{
+
+nav .navbar .navbar-dark-bg-dark {
     padding: 0;
 }
-.collapse.navbar-collapse .nav-link.active{
+
+.collapse.navbar-collapse .nav-link.active {
     font-size: small;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
     font-weight: 300;
     transition: 5s ease-in;
 }
-.collapse.navbar-collapse .nav-link.active:hover{
+
+.collapse.navbar-collapse .nav-link.active:hover {
     color: #000000;
 }
 
-
-
 /*-----MAIN INDEX-----*/
-main{
+main {
     grid-area: main;
 }
-.bienvenida{
-    background-image:url("../img/yoda.png");
-    background-position:center;
-    width:100%;
-    height:85vh;
-    background-repeat:no-repeat;
+
+.bienvenida {
+    background-image: url("../img/yoda.png");
+    background-position: center;
+    width: 100%;
+    height: 85vh;
+    background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     text-align: center;
@@ -67,53 +71,59 @@ main{
     justify-content: center;
     align-items: center;
 }
+
 /* section bienvenida */
-.bienvenida .bienvenidaTitulo{
+.bienvenida .bienvenidaTitulo {
     background-color: rgba(0, 0, 0, 0.431);
     width: 100%;
     color: rgb(255, 255, 255);
     font-size: 60px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-weight: 500;
-
 }
-.bienvenida .bienvenidaParrafo{
+
+.bienvenida .bienvenidaParrafo {
     background-color: rgba(0, 0, 0, 0.431);
     width: 100%;
     color: rgb(255, 255, 255);
     font-size: 30px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-weight: 300;
 }
+
 /* fin section bienvenida */
 
 /* section oferta */
-.oferta{
+.oferta {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 40px;
     padding-top: 20px;
 }
-.oferta h4{
+
+.oferta h4 {
     text-align: center;
     background-color: white;
     color: rgba(189, 189, 189, 0.633);
     margin: 5px 10px 5px 10px;
 }
-.oferta .ofertaEntrega{
+
+.oferta .ofertaEntrega {
     width: 25px;
     height: 25px;
 }
-.oferta .ofertaPago{
+
+.oferta .ofertaPago {
     width: 25px;
     height: 25px;
 }
+
 /* fin section oferta */
 
 /* section navega */
 
-.navega div{
+.navega div {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -121,24 +131,28 @@ main{
     padding-top: 25px;
     transition: 2s;
 }
-.navega div:hover{
+
+.navega div:hover {
     transform: scale(1.1);
 }
-.navega .navegaProductos{
+
+.navega .navegaProductos {
     width: 250px;
     height: 250px;
     position: relative;
     display: flex;
 }
-.navega .navegaProductos img{
+
+.navega .navegaProductos img {
     width: 250px;
     height: 250px;
     border: 1px solid rgba(0, 0, 0, 0.837);
-    box-shadow: 10px 11px 36px -8px rgba(0,0,0,0.75);
-    -webkit-box-shadow: 10px 11px 36px -8px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 11px 36px -8px rgba(0,0,0,0.75);
+    box-shadow: 10px 11px 36px -8px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 11px 36px -8px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 11px 36px -8px rgba(0, 0, 0, 0.75);
 }
-.navega .navegaProductos h3{
+
+.navega .navegaProductos h3 {
     position: absolute;
     bottom: 50%;
     left: 30%;
@@ -146,21 +160,24 @@ main{
     width: 35%;
     background-color: rgba(0, 0, 0, 0.379);
     color: rgb(255, 255, 255);
-    }
-.navega .navegaNosotros{
+}
+
+.navega .navegaNosotros {
     width: 250px;
     height: 250px;
     position: relative;
 }
-.navega .navegaNosotros img{
+
+.navega .navegaNosotros img {
     width: 250px;
     height: 250px;
     border: 1px solid rgba(0, 0, 0, 0.837);
-    box-shadow: 10px 11px 36px -8px rgba(0,0,0,0.75);
-    -webkit-box-shadow: 10px 11px 36px -8px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 11px 36px -8px rgba(0,0,0,0.75);
+    box-shadow: 10px 11px 36px -8px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 11px 36px -8px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 11px 36px -8px rgba(0, 0, 0, 0.75);
 }
-.navega .navegaNosotros h3{
+
+.navega .navegaNosotros h3 {
     position: absolute;
     bottom: 50%;
     left: 25%;
@@ -169,20 +186,23 @@ main{
     background-color: rgba(0, 0, 0, 0.379);
     color: rgb(255, 255, 255);
 }
-.navega .navegaCarrito{
+
+.navega .navegaCarrito {
     width: 250px;
     height: 250px;
     position: relative;
 }
-.navega .navegaCarrito img{
+
+.navega .navegaCarrito img {
     width: 250px;
     height: 250px;
     border: 1px solid rgba(0, 0, 0, 0.837);
-    box-shadow: 10px 11px 36px -8px rgba(0,0,0,0.75);
-    -webkit-box-shadow: 10px 11px 36px -8px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 11px 36px -8px rgba(0,0,0,0.75);
+    box-shadow: 10px 11px 36px -8px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 11px 36px -8px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 11px 36px -8px rgba(0, 0, 0, 0.75);
 }
-.navega .navegaCarrito h3{
+
+.navega .navegaCarrito h3 {
     position: absolute;
     bottom: 50%;
     left: 35%;
@@ -194,46 +214,47 @@ main{
 
 /* section insta */
 
-.insta div{
+.insta div {
     display: flex;
     justify-content: center;
     align-items: center;
     transition: 2s;
 }
-.insta div:hover{
+
+.insta div:hover {
     transform: scale(1.1);
 }
 
-.insta img{
+.insta img {
     display: flex;
-    justify-content:flex-start;
+    justify-content: flex-start;
     width: 500px;
     height: 250px;
 }
 
-
 /* section galeria */
-.galeria{
+.galeria {
     display: flex;
     justify-content: center;
 }
-.gridGaleria{
+
+.gridGaleria {
     height: 650px;
     display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: 300px 300px ;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 300px 300px;
     row-gap: 50px;
     column-gap: 150px;
 }
 
-.galeria img{
+.galeria img {
     width: 300px;
     height: 300px;
     border: 3px solid black;
 }
 
 /* div fixed */
-.fixed{
+.fixed {
     position: fixed;
     bottom: 10%;
     right: 3%;
@@ -245,145 +266,179 @@ main{
     border: 2px solid rgba(1, 58, 0, 0.777);
     border-radius: 100%;
 }
-.fixed div{
+
+.fixed div {
     margin-top: 20px;
 }
-.fixed div img{
+
+.fixed div img {
     height: 50px;
     width: 50px;
 }
+
 /* FIN MAIN INDEX */
 
 /* -----MAIN PRODUCTOS----- */
+
+.gridProductos img {
+        height: 250px;
+        width: 250px;
+}
+
+
+
+
 /* FIN MAIN PRODUCTOS */
 
 /* -----MAIN NOSOTROS----- */
-.mainNosotros{
+.mainNosotros {
     background-image: url(../img/bg.jpg);
 }
-.imagenNosotros{
+
+.imagenNosotros {
     display: flex;
     justify-content: center;
     align-items: center;
     perspective: 500px;
     transform-style: preserve-3d;
-    
 }
-.imagenNosotros h2{
+
+.imagenNosotros h2 {
     font-size: 80px;
     color: white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
     align-items: center;
 }
-.textoNosotros{
+
+.textoNosotros {
     margin: 200px;
 }
-.textoNosotros div{
+
+.textoNosotros div {
     width: 100%;
 }
-.textoNosotros p{
-    
+
+.textoNosotros p {
     font-size: 40px;
     color: white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
     text-align: justify;
     line-height: 1.5;
     font-weight: bold;
 }
 
-.ana{
+.ana {
     animation: ana 10s ease-out infinite;
 }
-.kin{
+
+.kin {
     animation: kin 10s ease-out infinite;
 }
 
-
-@keyframes ana{
+@keyframes ana {
     0% {
         opacity: 0;
         transform: scale(1.5) translateY(-0.75em);
     }
+
     20% {
         opacity: 1;
     }
+
     89% {
         opacity: 1;
         transform: scale(1);
     }
-    100% {
-        opacity: 0;
-        transform: translateZ(-1000em);
-    }
-}
-@keyframes kin{
-    0% {
-        opacity: 0;
-        transform: scale(1.5) translateY(0.5em);
-    }
-    20% {
-        opacity: 1;
-    }
-    90% {
-        opacity: 1;
-        transform: scale(1);
-    }
+
     100% {
         opacity: 0;
         transform: translateZ(-1000em);
     }
 }
 
-.textoUstedes h3{
+@keyframes kin {
+    0% {
+        opacity: 0;
+        transform: scale(1.5) translateY(0.5em);
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateZ(-1000em);
+    }
+}
+
+.textoUstedes h3 {
     font-size: 35px;
     color: white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
-.textoUstedes div{
+
+.textoUstedes div {
     width: 100%;
 }
-.textoUstedes{
+
+.textoUstedes {
     font-size: 25px;
     color: white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
     text-align: justify;
     line-height: 1.5;
     font-weight: bold;
     margin: 200px;
 }
 
-
-.gridGaleriaUstedes{
+.gridGaleriaUstedes {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 300px 300px 300px;
     gap: 15px;
 }
-.gridGaleriaUstedes div img{
+
+.gridGaleriaUstedes div img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.itemUstedes1{
+.itemUstedes1 {
     grid-row: span 2;
 }
-.itemUstedes2{
+
+.itemUstedes2 {
     grid-row: span 2;
 }
-.itemUstedes3{
+
+.itemUstedes3 {
     grid-row: span 2;
 }
-.itemUstedes4{
+
+.itemUstedes4 {
     grid-row: span 2;
 }
-.itemUstedes5{
+
+.itemUstedes5 {
     grid-row: span 2;
 }
-.itemUstedes6{
+
+.itemUstedes6 {
     grid-row: span 2;
 }
-.itemUstedes9{
+
+.itemUstedes9 {
     grid-row: span 1;
 }
 
@@ -393,10 +448,11 @@ main{
 /* FIN MAIN CARRITO */
 
 /* ----MAIN CONTACTO----- */
-.contacto{
+.contacto {
     margin: 0;
 }
-.dudas h1{
+
+.dudas h1 {
     color: #000000;
     text-align: center;
     margin: 0;
@@ -405,17 +461,18 @@ main{
     padding-top: 20px;
 }
 
-.dudas form{
+.dudas form {
     width: 450px;
     margin: auto;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0, 0, 0, 0.4);
     padding: 10px 20px;
     box-sizing: border-box;
     margin-top: 20px;
     margin-bottom: 50px;
 }
 
-.dudas input, textarea{
+.dudas input,
+textarea {
     width: 100%;
     margin-bottom: 20px;
     padding: 7px;
@@ -423,28 +480,26 @@ main{
     font-size: 17px;
     border: none;
 }
-.dudas textarea{
+
+.dudas textarea {
     min-height: 100px;
     max-height: 200px;
     max-width: 100%;
 }
-.dudas button{
+
+.dudas button {
     background-color: black;
     color: white;
     padding: 20px;
 }
 
-
-@media screen and (max-width:480px){
-    .dudas form{
+@media screen and (max-width: 480px) {
+    .dudas form {
         width: 100%;
     }
 }
 
-
 /* FIN MAIN CONTACTO */
-
-
 
 /*-----FOOTER-----*/
 footer {
@@ -455,18 +510,20 @@ footer {
     align-items: center;
     grid-area: footer;
 }
-.footerStyle .footerList{
+
+.footerStyle .footerList {
     background-color: white;
     height: 50px;
     width: 150px;
     border: 2px solid rgb(1, 44, 12);
-    
 }
-.footerStyle .socialFoot img{
+
+.footerStyle .socialFoot img {
     width: 60px;
     height: 60px;
 }
-.footerStyle .socialFoot{
+
+.footerStyle .socialFoot {
     background-color: white;
     width: 200px;
     height: 100px;
@@ -475,124 +532,138 @@ footer {
     justify-content: space-around;
     border: 2px solid black;
 }
-.footerStyle .boxDerechos{
+
+.footerStyle .boxDerechos {
     background-color: white;
     height: 50px;
     width: 150px;
     border: 2px solid black;
 }
 
-
 /* MEDIA QUERY ----INICIO*/
-@media screen and (max-width:1646px){
-    .gridGaleria{
+@media screen and (max-width: 1646px) {
+    .gridGaleria {
         margin-left: 20px;
-        grid-template-columns: repeat(4,1fr);
+        grid-template-columns: repeat(4, 1fr);
         grid-template-rows: 300px 300px 300px 300px;
         row-gap: 20px;
         column-gap: 10px;
     }
 }
-@media screen and (max-width:1248px){
-    .gridGaleria{
+
+@media screen and (max-width: 1248px) {
+    .gridGaleria {
         margin-left: 20px;
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 300px 300px 300px;
         row-gap: 20px;
         column-gap: 10px;
         margin-bottom: 300px;
     }
-    footer{
+
+    footer {
         width: auto;
     }
 }
-@media screen and (max-width:970px){
-    .gridGaleria{
-    margin-left: 20px;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: 300px 300px 300px;
-    row-gap: 20px;
-    column-gap: 10px;
+
+@media screen and (max-width: 970px) {
+    .gridGaleria {
+        margin-left: 20px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 300px 300px 300px;
+        row-gap: 20px;
+        column-gap: 10px;
     }
-    footer{
+
+    footer {
         width: auto;
         margin-top: 350px;
     }
-    footer h4{
+
+    footer h4 {
         font-size: 15px;
     }
-    footer p{
+
+    footer p {
         font-size: 10spx;
     }
 }
-@media screen and (max-width:920px) {
-    .gridGaleria{
-        grid-template-columns: repeat(2,1fr);
+
+@media screen and (max-width: 920px) {
+    .gridGaleria {
+        grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 300px 300px;
         row-gap: 20px;
         column-gap: 10px;
         margin-bottom: 300px;
-        }
+    }
 }
+
 @media screen and (max-width: 830px) {
-    .navega div{
+    .navega div {
         display: flex;
         flex-direction: column;
     }
 }
-@media screen and (max-width: 640px){
-    .bienvenida{
+
+@media screen and (max-width: 640px) {
+    .bienvenida {
         width: auto;
-        height:85vh;
+        height: 85vh;
     }
-    .bienvenidaTitulo{
+
+    .bienvenidaTitulo {
         font-size: 30px;
     }
-    .bienvenidaParrafo{
+
+    .bienvenidaParrafo {
         font-size: 15px;
     }
-    .gridGaleria{
+
+    .gridGaleria {
         margin-left: 20px;
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(1, 1fr);
         grid-template-rows: 300px;
         row-gap: 20px;
         column-gap: 10px;
     }
-    footer{
+
+    footer {
         width: auto;
         margin-top: 1600px;
     }
 }
 
-
-
 /* MEDIA QUERY ----NOSOTROS*/
-@media screen and (max-width:1400px){
-    .imagenNosotros{
+@media screen and (max-width: 1400px) {
+    .imagenNosotros {
         display: flex;
         justify-content: center;
         align-items: center;
         perspective: 400px;
     }
-    .imagenNosotros h2{
+
+    .imagenNosotros h2 {
         font-size: 60px;
     }
 }
-@media screen and (max-width:1230px){
-    .imagenNosotros{
+
+@media screen and (max-width: 1230px) {
+    .imagenNosotros {
         display: flex;
         justify-content: center;
         align-items: center;
         perspective: 300px;
     }
-    .imagenNosotros h2{
+
+    .imagenNosotros h2 {
         font-size: 40px;
     }
-    .gridGaleriaUstedes{
+
+    .gridGaleriaUstedes {
         display: grid;
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(1, 1fr);
         grid-template-rows: 300px;
         gap: 15px;
-        }
+    }
 }
-
