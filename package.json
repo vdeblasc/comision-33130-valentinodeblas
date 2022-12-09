@@ -1,0 +1,26 @@
+{
+  "name": "comision-33130",
+  "version": "1.0.0",
+  "description": "<h1 align=\"center\">Hi 👋, I'm Valentino De Blas</h1>\r <h3 align=\"center\">A passionate frontend developer from Argentina</h3>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/estilos.scss css/estilos.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vdeblasc/comision-33130-valentinodeblas.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vdeblasc/comision-33130-valentinodeblas/issues"
+  },
+  "homepage": "https://github.com/vdeblasc/comision-33130-valentinodeblas#readme",
+  "devDependencies": {
+    "node-sass": "^8.0.0",
+    "nodemon": "^2.0.20"
+  }
+}

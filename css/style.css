@@ -390,7 +390,7 @@ main {
     width: 100%;
 }
 
-.textoUstedes {
+.textoUstedes p{
     font-size: 25px;
     color: white;
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
@@ -513,7 +513,7 @@ footer {
 
 .footerStyle .footerList {
     background-color: white;
-    height: 50px;
+    height: 75px;
     width: 150px;
     border: 2px solid rgb(1, 44, 12);
 }

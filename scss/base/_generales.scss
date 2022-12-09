@@ -1,0 +1,16 @@
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.gridContenedor {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px auto 300px;
+    grid-template-areas:
+        "header header header"
+        "main main main"
+        "footer footer footer";
+}
+
