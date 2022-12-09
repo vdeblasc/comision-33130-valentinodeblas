@@ -7,9 +7,7 @@
 .gridContenedor {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 100px auto 300px;
-  grid-template-areas: "header header header"
- "main main main"
- "footer footer footer"; }
+  grid-template-areas: "header header header" "main main main" "footer footer footer"; }
 
 main {
   grid-area: main; }
@@ -173,14 +171,14 @@ article.card {
   top: 0px;
   position: relative;
   max-width: 350px;
-  background-color: #f2f4f9;
+  background-color: white;
   border-radius: 6px;
   padding: 15px 10px;
   margin: 1rem;
   text-decoration: none;
   z-index: 0;
   overflow: hidden;
-  border: 1px solid #f2f8f9; }
+  border: 1px solid white; }
   article.card:hover {
     transition: all 0.2s ease-out;
     box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
@@ -277,8 +275,7 @@ span:nth-child(1) {
   .imagenNosotros div h2 {
     font-size: 80px;
     color: white;
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
- "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
     align-items: center; }
   .imagenNosotros div .kin {
     animation: kin 10s ease-out infinite; }
@@ -316,8 +313,7 @@ span:nth-child(1) {
     .textoNosotros div p {
       font-size: 40px;
       color: white;
-      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
- "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
       text-align: justify;
       line-height: 1.5;
       font-weight: bold; }
@@ -327,13 +323,11 @@ span:nth-child(1) {
   .textoUstedes div h3 {
     font-size: 35px;
     color: white;
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
- "Lucida Sans Unicode", Geneva, Verdana, sans-serif; }
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif; }
   .textoUstedes div p {
     font-size: 25px;
     color: white;
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
- "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
     text-align: justify;
     line-height: 1.5;
     font-weight: bold;

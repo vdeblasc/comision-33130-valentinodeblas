@@ -280,10 +280,117 @@ main {
 
 /* -----MAIN PRODUCTOS----- */
 
-.gridProductos img {
-        height: 250px;
-        width: 250px;
+.filtros {
+    margin-top: 15px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    display: flex;
+
+}    
+.filtros h2 {
+        margin-right: 15px;
+    }
+    
+.row-row-cols-1-row-cols-md-3-g-4{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 625px 625px 625px;
+    gap: 5px;
 }
+.col{
+    display: block;
+    top: 0;
+    position: relative;
+    max-width: 350px;
+    background-color: white;
+    border-radius: 6px;
+    padding: 15px 10px;
+    margin: 1rem;
+    text-decoration: none;
+    z-index: 0;
+    overflow: hidden;
+    border: 1px solid white;
+}
+.col:hover{
+    transition: all 0.2s ease-out;
+    box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+    top: -4px;
+    border: 1px solid #cccccc;
+    background-color: white;
+}
+.col::before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -16px;
+    right: -16px;
+    background: #3570be;
+    height: 20px;
+    width: 20px;
+    border-radius: 32px;
+    transform: scale(2);
+    transform-origin: 50% 50%;
+    transition: transform 0.15s ease-out;
+}
+.col:hover::before{
+    transform: scale(2.15);
+}
+.categoria span{
+    color: black;
+    padding: 0.2rem 0.5rem;
+    font-size: 16px;
+    border-radius: 4px;
+}
+.niños{
+    background-color: rgb(255, 153, 0);
+}
+.caña{
+    background-color: red;
+}
+.cañaPremium{
+    background-color: rgb(221, 128, 144);
+}
+.soquetes{
+    background-color: rgb(83, 131, 170);
+}
+.soquetesPremium{
+    background-color: rgb(114, 191, 83);
+}
+.deportivas{
+    background-color: rgb(116, 68, 163);
+}
+.card-body h3{
+    font-size: 35px;
+}
+.card-body .card-text{
+    font-weight: bold;
+    font-size: 25px;
+    color: rgb(89, 21, 125);
+    margin-top: 0.5rem;
+}
+
+.card-body .comprar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    position: relative;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    background-color: rgba(106, 106, 106, 0.501);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    transition: .5s;
+}
+button:hover{
+    color: #ffffff;
+}
+
 
 
 
