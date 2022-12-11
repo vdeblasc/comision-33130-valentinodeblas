@@ -215,150 +215,158 @@ main {
 }
 
 //---------MAIN PRODUCTOS---------//
-// .gridProductos img {
-//     height: 250px;
-//     width: 250px;
-// }
-img {
-    max-width: 100%;
-}
+.presentacion {
+    background-image: url(../img/bg.jpg);
+    height: 100px;
+    margin-top: 12px;
+    margin-bottom: 12px;
 
+    div {
+        padding-top: 20px;
+        margin-top: 20px;
 
-article.card {
-display: block;
-top: 0px;
-position: relative;
-max-width: 350px;
-background-color: $color-principal2;
-border-radius: 6px;
-padding: 15px 10px;
-margin: 1rem;
-text-decoration: none;
-z-index: 0;
-overflow: hidden;
-border: 1px solid $color-principal2;
-
-&:hover {
-    transition: all 0.2s ease-out;
-    box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
-    top: -4px;
-    border: 1px solid $color-border;
-    background-color: $color-principal2;
-}
-
-&:before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    top: -16px;
-    right: -16px;
-    background: #3570be;
-    height: 20px;
-    width: 20px;
-    border-radius: 32px;
-    transform: scale(2);
-    transform-origin: 50% 50%;
-    transition: transform 0.15s ease-out;
-}
-
-&:hover:before {
-    transform: scale(2.15);
-}
-}
-
-.header-card img {
-border-radius: 8px 8px 8px 8px;
-max-height: 200px;
-height: 200px;
-width: 100%;
-}
-
-.categoria-card {
-margin-top: 1rem;
-
-span {
-    color: white;
-    padding: .2rem .5rem;
-    border-radius: 4px;
-}
-
-.niños {
-    background-color: nth($background-color, 1);
-}
-
-.soquetes {
-    background-color: nth($background-color, 2);
-}
-
-.soquetesPremium {
-    background-color: nth($background-color, 3);
-}
-
-.caña {
-    background-color: nth($background-color, 4);
-}
-
-.cañaPremium {
-    background-color: nth($background-color, 5);
-}
-
-.deportivas {
-    background-color: nth($background-color, 6);
-}
+        h1 {
+            color: $color-principal2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 45px;
+        }
+    }
 }
 
 .filtros {
-margin-top: 15px;
-padding-left: 10px;
-display: flex;
+    margin-top: 15px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    display: flex;
 
-h2 {
-    margin-right: 15px;
-}
-
-.btn-primary {
-    background-color: red;
-}
-}
-
-
-.card footer {
-padding: 0 1rem;
-
-.texto-card {
-    min-height: 120px;
-
-    .actual {
-        font-weight: bold;
-        font-size: 20px;
-        color: #3570be;
-    }
-
-    .rebaja {
-        font-weight: bold;
-        font-size: 20px;
-        color: red;
+    h2 {
+        margin-right: 15px;
     }
 }
+
+.row-row-cols-1-row-cols-md-3-g-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap: 5px;
+
+    .col {
+        display: block;
+        top: 0;
+        position: relative;
+        max-width: 350px;
+        background-color: $color-principal2;
+        border-radius: 6px;
+        padding: 15px 10px;
+        margin: 1rem;
+        text-decoration: none;
+        z-index: 0;
+        overflow: hidden;
+        border: 1px solid $color-principal2;
+
+        &:hover {
+            transition: all 0.2s ease-out;
+            box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+            top: -4px;
+            border: 1px solid $color-border;
+            background-color: $color-principal2;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            top: -16px;
+            right: -16px;
+            background: #4300ae;
+            height: 20px;
+            width: 20px;
+            border-radius: 32px;
+            transform: scale(2);
+            transform-origin: 50% 50%;
+            transition: transform 0.15s ease-out;
+        }
+
+        &:hover::before {
+            transform: scale(2.15);
+        }
+
+        .card-body {
+            height: auto;
+            .categoria {
+                span {
+                    color: $color-principal;
+                    padding: 0.2rem 0.5rem;
+                    font-size: 16px;
+                    border-radius: 4px;
+                    }
+                    .niños {
+                        background-color: nth($background-color, 2);
+                    }
+
+                    .caña {
+                        background-color: nth($background-color, 1);
+                    }
+
+                    .deportivas {
+                        background-color: nth($background-color, 3);
+                    }
+
+                    .soquetes {
+                        background-color: nth($background-color, 5);
+                    }
+
+                    .premium {
+                        background-color: nth($background-color, 4);
+                    }
+
+                
+            }
+
+            h3 {
+                font-size: 35px;
+            }
+
+            .card-text {
+                font-weight: bold;
+                font-size: 25px;
+                color: rgb(89, 21, 125);
+                margin-top: 0.5rem;
+            }
+
+            .comprar {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                button {
+                    position: relative;
+                    padding: 10px 15px;
+                    border: none;
+                    border-radius: 4px;
+                    outline: none;
+                    background-color: rgba(106, 106, 106, 0.501);
+                    color: $color-principal;
+                    cursor: pointer;
+                    font-weight: bold;
+                    font-size: 16px;
+                    transition: .5s;
+
+                    &:hover {
+                        color: $color-principal2;
+                    }
+                }
+            }
+        }
+    }
 }
 
-span:nth-child(1) {
-    color: #575757;
-}
 
 
-.card-wrap {
-display: flex;
-flex-flow: wrap;
-justify-content: center;
-}
 
-.botonCompra {
-padding-bottom: 10px;
-justify-content: center;
-display: flex;
 
-}
 
 //--------MAIN NOSOTROS-----------//
 .mainNosotros {
@@ -540,7 +548,7 @@ display: flex;
     form {
         width: 450px;
         margin: auto;
-        background-color: rgba(0, 0, 0, 0.4);
+        background-color: #35be5a;
         padding: 10px 20px;
         box-sizing: border-box;
         margin-top: 20px;
@@ -568,8 +576,8 @@ display: flex;
             }
 
             button {
-                background-color: black;
-                color: white;
+                background-color: $color-principal;
+                color: $color-principal2;
                 padding: 20px;
             }
         }

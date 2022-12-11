@@ -163,103 +163,110 @@ main {
         height: 50px;
         width: 50px; }
 
-img {
-  max-width: 100%; }
-
-article.card {
-  display: block;
-  top: 0px;
-  position: relative;
-  max-width: 350px;
-  background-color: white;
-  border-radius: 6px;
-  padding: 15px 10px;
-  margin: 1rem;
-  text-decoration: none;
-  z-index: 0;
-  overflow: hidden;
-  border: 1px solid white; }
-  article.card:hover {
-    transition: all 0.2s ease-out;
-    box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
-    top: -4px;
-    border: 1px solid #cccccc;
-    background-color: white; }
-  article.card:before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    top: -16px;
-    right: -16px;
-    background: #3570be;
-    height: 20px;
-    width: 20px;
-    border-radius: 32px;
-    transform: scale(2);
-    transform-origin: 50% 50%;
-    transition: transform 0.15s ease-out; }
-  article.card:hover:before {
-    transform: scale(2.15); }
-
-.header-card img {
-  border-radius: 8px 8px 8px 8px;
-  max-height: 200px;
-  height: 200px;
-  width: 100%; }
-
-.categoria-card {
-  margin-top: 1rem; }
-  .categoria-card span {
-    color: white;
-    padding: .2rem .5rem;
-    border-radius: 4px; }
-  .categoria-card .niños {
-    background-color: red; }
-  .categoria-card .soquetes {
-    background-color: #ff9900; }
-  .categoria-card .soquetesPremium {
-    background-color: #dd8090; }
-  .categoria-card .caña {
-    background-color: #72bf53; }
-  .categoria-card .cañaPremium {
-    background-color: #cf7f07; }
-  .categoria-card .deportivas {
-    background-color: #5383aa; }
+.presentacion {
+  background-image: url(../img/bg.jpg);
+  height: 100px;
+  margin-top: 12px;
+  margin-bottom: 12px; }
+  .presentacion div {
+    padding-top: 20px;
+    margin-top: 20px; }
+    .presentacion div h1 {
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 45px; }
 
 .filtros {
   margin-top: 15px;
   padding-left: 10px;
+  padding-bottom: 20px;
   display: flex; }
   .filtros h2 {
     margin-right: 15px; }
-  .filtros .btn-primary {
-    background-color: red; }
 
-.card footer {
-  padding: 0 1rem; }
-  .card footer .texto-card {
-    min-height: 120px; }
-    .card footer .texto-card .actual {
-      font-weight: bold;
-      font-size: 20px;
-      color: #3570be; }
-    .card footer .texto-card .rebaja {
-      font-weight: bold;
-      font-size: 20px;
-      color: red; }
-
-span:nth-child(1) {
-  color: #575757; }
-
-.card-wrap {
-  display: flex;
-  flex-flow: wrap;
-  justify-content: center; }
-
-.botonCompra {
-  padding-bottom: 10px;
-  justify-content: center;
-  display: flex; }
+.row-row-cols-1-row-cols-md-3-g-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  gap: 5px; }
+  .row-row-cols-1-row-cols-md-3-g-4 .col {
+    display: block;
+    top: 0;
+    position: relative;
+    max-width: 350px;
+    background-color: white;
+    border-radius: 6px;
+    padding: 15px 10px;
+    margin: 1rem;
+    text-decoration: none;
+    z-index: 0;
+    overflow: hidden;
+    border: 1px solid white; }
+    .row-row-cols-1-row-cols-md-3-g-4 .col:hover {
+      transition: all 0.2s ease-out;
+      box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+      top: -4px;
+      border: 1px solid #cccccc;
+      background-color: white; }
+    .row-row-cols-1-row-cols-md-3-g-4 .col::before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: -16px;
+      right: -16px;
+      background: #4300ae;
+      height: 20px;
+      width: 20px;
+      border-radius: 32px;
+      transform: scale(2);
+      transform-origin: 50% 50%;
+      transition: transform 0.15s ease-out; }
+    .row-row-cols-1-row-cols-md-3-g-4 .col:hover::before {
+      transform: scale(2.15); }
+    .row-row-cols-1-row-cols-md-3-g-4 .col .card-body {
+      height: auto; }
+      .row-row-cols-1-row-cols-md-3-g-4 .col .card-body .categoria span {
+        color: black;
+        padding: 0.2rem 0.5rem;
+        font-size: 16px;
+        border-radius: 4px; }
+      .row-row-cols-1-row-cols-md-3-g-4 .col .card-body .categoria .niños {
+        background-color: #ff9900; }
+      .row-row-cols-1-row-cols-md-3-g-4 .col .card-body .categoria .caña {
+        background-color: red; }
+      .row-row-cols-1-row-cols-md-3-g-4 .col .card-body .categoria .deportivas {
+        background-color: #dd8090; }
+      .row-row-cols-1-row-cols-md-3-g-4 .col .card-body .categoria .soquetes {
+        background-color: #5383aa; }
+      .row-row-cols-1-row-cols-md-3-g-4 .col .card-body .categoria .premium {
+        background-color: #72bf53; }
+      .row-row-cols-1-row-cols-md-3-g-4 .col .card-body h3 {
+        font-size: 35px; }
+      .row-row-cols-1-row-cols-md-3-g-4 .col .card-body .card-text {
+        font-weight: bold;
+        font-size: 25px;
+        color: #59157d;
+        margin-top: 0.5rem; }
+      .row-row-cols-1-row-cols-md-3-g-4 .col .card-body .comprar {
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .row-row-cols-1-row-cols-md-3-g-4 .col .card-body .comprar button {
+          position: relative;
+          padding: 10px 15px;
+          border: none;
+          border-radius: 4px;
+          outline: none;
+          background-color: rgba(106, 106, 106, 0.501);
+          color: black;
+          cursor: pointer;
+          font-weight: bold;
+          font-size: 16px;
+          transition: .5s; }
+          .row-row-cols-1-row-cols-md-3-g-4 .col .card-body .comprar button:hover {
+            color: white; }
 
 .mainNosotros {
   background-image: url(../img/bg.jpg); }
@@ -371,7 +378,7 @@ span:nth-child(1) {
 .dudas form {
   width: 450px;
   margin: auto;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: #35be5a;
   padding: 10px 20px;
   box-sizing: border-box;
   margin-top: 20px;

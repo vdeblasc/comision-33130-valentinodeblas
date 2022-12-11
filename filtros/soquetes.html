@@ -7,38 +7,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/estilos.css">
     <link rel="shortcut icon" href="../img/favicon2.ico" type="image/x-icon">
     <title> Anakin Medias</title>
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html"><img src="../img/ANAKIN.png" alt="logo"></a>
+                <a class="navbar-brand" href="../index.html"><img src="../img/ANAKIN.png" alt="logo" width="75px"
+                        height="75px"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
-                    aria-label="Toggle navigation">
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                            <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="../pages/producto.html">Productos</a>
+                            <a class="nav-link active" href="../pages/producto.html">Productos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="../pages/nosotros.html">Sobre
-                                Nosotros</a>
+                            <a class="nav-link" href="../pages/nosotros.html">Sobre Nosotros</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="../pages/carrito.html">Carrito</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="../pages/contacto.html">Contacto</a>
+                            <a class="nav-link" href="../pages/contacto.html">Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -52,76 +49,208 @@
         </nav>
     </header>
     <main>
-        <section class="gridProductos">
-            <div class="itemProducto17">
-                <img src="../img/soquete-buzz.jpg" alt="17">
-                <h3></h3>
-                <p></p>
+        <section class="row-row-cols-1-row-cols-md-3-g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="../img/soquete-buzz.jpg" class="card-img-top" alt="verde">
+                    <div class="card-body">
+                        <div class="categoria">
+                            <span class="soquetes">Soquetes</span>
+                        </div>
+                        <h3 class="card-title">Buzz Lightyear</h3>
+                        <p class="card-text">$500</p>
+                        <div class="comprar"><button type="button">Comprar</button></div>
+                    </div>
+                </div>
             </div>
-            <div class="itemProducto18">
-                <img src="../img/soquete-coca.jpg" alt="18">
-                <h3></h3>
-                <p></p>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="../img/soquete-coca.jpg" class="card-img-top" alt="verde">
+                    <div class="card-body">
+                        <div class="categoria">
+                            <span class="soquetes">Soquetes</span>
+                        </div>
+                        <h3 class="card-title">Coca-Cola</h3>
+                        <p class="card-text">$500</p>
+                        <div class="comprar"><button type="button">Comprar</button></div>
+                    </div>
+                </div>
             </div>
-            <div class="itemProducto19">
-                <img src="../img/soquete-fanta.jpg" alt="19">
-                <h3></h3>
-                <p></p>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="../img/soquete-fanta.jpg" class="card-img-top" alt="verde">
+                    <div class="card-body">
+                        <div class="categoria">
+                            <span class="soquetes">Soquetes</span>
+                        </div>
+                        <h3 class="card-title">Fanta</h3>
+                        <p class="card-text">$500</p>
+                        <div class="comprar"><button type="button">Comprar</button></div>
+                    </div>
+                </div>
             </div>
-            <div class="itemProducto20">
-                <img src="../img/soquete-mariposa.jpg" alt="20">
-                <h3></h3>
-                <p></p>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="../img/soquete-mariposa.jpg" class="card-img-top" alt="verde">
+                    <div class="card-body">
+                        <div class="categoria">
+                            <span class="soquetes">Soquetes</span>
+                        </div>
+                        <h3 class="card-title">Mariposa</h3>
+                        <p class="card-text">$500</p>
+                        <div class="comprar"><button type="button">Comprar</button></div>
+                    </div>
+                </div>
             </div>
-            <div class="itemProducto21">
-                <img src="../img/soquete-nube.jpg" alt="21">
-                <h3></h3>
-                <p></p>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="../img/soquete-nube.jpg" class="card-img-top" alt="verde">
+                    <div class="card-body">
+                        <div class="categoria">
+                            <span class="soquetes">Soquetes</span>
+                        </div>
+                        <h3 class="card-title">Nubes</h3>
+                        <p class="card-text">$500</p>
+                        <div class="comprar"><button type="button">Comprar</button></div>
+                    </div>
+                </div>
             </div>
-            <div class="itemProducto22">
-                <img src="../img/soquete-oreo.jpg" alt="22">
-                <h3></h3>
-                <p></p>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="../img/soquete-oreo.jpg" class="card-img-top" alt="verde">
+                    <div class="card-body">
+                        <div class="categoria">
+                            <span class="soquetes">Soquetes</span>
+                        </div>
+                        <h3 class="card-title">Oreos</h3>
+                        <p class="card-text">$500</p>
+                        <div class="comprar"><button type="button">Comprar</button></div>
+                    </div>
+                </div>
             </div>
-            <div class="itemProducto23">
-                <img src="../img/soquete-simpsons.jpg" alt="23">
-                <h3></h3>
-                <p></p>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="../img/soquete-simpsons.jpg" class="card-img-top" alt="verde">
+                    <div class="card-body">
+                        <div class="categoria">
+                            <span class="soquetes">Soquetes</span>
+                        </div>
+                        <h3 class="card-title">Simpons</h3>
+                        <p class="card-text">$500</p>
+                        <div class="comprar"><button type="button">Comprar</button></div>
+                    </div>
+                </div>
             </div>
-            <div class="itemProducto24">
-                <img src="../img/soquete-sonrisa.jpg" alt="24">
-                <h3></h3>
-                <p></p>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="../img/soquete-sonrisa.jpg" class="card-img-top" alt="verde">
+                    <div class="card-body">
+                        <div class="categoria">
+                            <span class="soquetes">Soquetes</span>
+                        </div>
+                        <h3 class="card-title">Sonrisa</h3>
+                        <p class="card-text">$500</p>
+                        <div class="comprar"><button type="button">Comprar</button></div>
+                    </div>
+                </div>
             </div>
-            <div class="itemProducto25">
-                <img src="../img/soquete-spider.jpg" alt="25">
-                <h3></h3>
-                <p></p>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="../img/soquete-spider.jpg" class="card-img-top" alt="verde">
+                    <div class="card-body">
+                        <div class="categoria">
+                            <span class="soquetes">Soquetes</span>
+                        </div>
+                        <h3 class="card-title">Spider Man</h3>
+                        <p class="card-text">$500</p>
+                        <div class="comprar"><button type="button">Comprar</button></div>
+                    </div>
+                </div>
             </div>
-            <div class="itemProducto26">
-                <img src="../img/soquete-star.jpg" alt="26">
-                <h3></h3>
-                <p></p>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="../img/soquete-star.jpg" class="card-img-top" alt="verde">
+                    <div class="card-body">
+                        <div class="categoria">
+                            <span class="soquetes">Soquetes</span>
+                        </div>
+                        <h3 class="card-title">Star Wars</h3>
+                        <p class="card-text">$500</p>
+                        <div class="comprar"><button type="button">Comprar</button></div>
+                    </div>
+                </div>
             </div>
-            <div class="itemProducto27">
-                <img src="../img/soquete-star2.jpg" alt="27">
-                <h3></h3>
-                <p></p>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="../img/soquete-star2.jpg" class="card-img-top" alt="verde">
+                    <div class="card-body">
+                        <div class="categoria">
+                            <span class="soquetes">Soquetes</span>
+                        </div>
+                        <h3 class="card-title">Star Wars-Coffe</h3>
+                        <p class="card-text">$500</p>
+                        <div class="comprar"><button type="button">Comprar</button></div>
+                    </div>
+                </div>
             </div>
-            <div class="itemProducto28">
-                <img src="../img/soquete-star3.jpg" alt="28">
-                <h3></h3>
-                <p></p>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="../img/soquete-star3.jpg" class="card-img-top" alt="verde">
+                    <div class="card-body">
+                        <div class="categoria">
+                            <span class="soquetes">Soquetes</span>
+                        </div>
+                        <h3 class="card-title">Star Wars-Dark Vader</h3>
+                        <p class="card-text">$500</p>
+                        <div class="comprar"><button type="button">Comprar</button></div>
+                    </div>
+                </div>
             </div>
-            <div class="itemProducto29">
-                <img src="../img/soquete-stranger.jpg" alt="29">
-                <h3></h3>
-                <p></p>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="../img/soquete-stranger.jpg" class="card-img-top" alt="verde">
+                    <div class="card-body">
+                        <div class="categoria">
+                            <span class="soquetes">Soquetes</span>
+                        </div>
+                        <h3 class="card-title">Stranger Things-Green</h3>
+                        <p class="card-text">$500</p>
+                        <div class="comprar"><button type="button">Comprar</button></div>
+                    </div>
+                </div>
             </div>
-            <div class="itemProducto30">
-                <img src="../img/soquete-stranger2.jpg" alt="30">
-                <h3></h3>
-                <p></p>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="../img/soquete-stranger2.jpg" class="card-img-top" alt="verde">
+                    <div class="card-body">
+                        <div class="categoria">
+                            <span class="soquetes">Soquetes</span>
+                        </div>
+                        <h3 class="card-title">Stranger Things-White</h3>
+                        <p class="card-text">$500</p>
+                        <div class="comprar"><button type="button">Comprar</button></div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
+    <footer class="footerStyle">
+        <div class="footerList">
+            <h4 class="footerListTitulo">Ubicacion</h4>
+            <p class="footerListParrafo"> Mendoza, Argentina</p>
+        </div>
+        <div class="socialFoot">
+            <a class="titleList" href="https://www.instagram.com/anakin.medias/?hl=es-la"><img
+                    src="../img/instagram.png"></a>
+            <a class="titleList" href=""><img src="../img/email.png"></a>
+        </div>
+        <div class="boxDerechos">
+            <p>Todos los derechos reservados</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

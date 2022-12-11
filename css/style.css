@@ -20,6 +20,7 @@ header {
     top: 0; */
     width: 100%;
     height: 100%;
+
     /*display: flex;
     justify-content: space-between;
     align-items: center;
@@ -279,6 +280,22 @@ main {
 /* FIN MAIN INDEX */
 
 /* -----MAIN PRODUCTOS----- */
+.presentacion{
+    background-image: url(../img/bg.jpg);
+    height: 100px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    overflow: hidden;
+}
+
+.presentacion h1{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 45px;
+}
+
 
 .filtros {
     margin-top: 15px;
@@ -293,8 +310,8 @@ main {
     
 .row-row-cols-1-row-cols-md-3-g-4{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 625px 625px 625px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 550px 550px 550px 550px;
     gap: 5px;
 }
 .col{
@@ -324,7 +341,7 @@ main {
     z-index: -1;
     top: -16px;
     right: -16px;
-    background: #3570be;
+    background: #4300ae;
     height: 20px;
     width: 20px;
     border-radius: 32px;
@@ -347,17 +364,14 @@ main {
 .caña{
     background-color: red;
 }
-.cañaPremium{
+.deportivas{
     background-color: rgb(221, 128, 144);
 }
 .soquetes{
     background-color: rgb(83, 131, 170);
 }
-.soquetesPremium{
+.premium{
     background-color: rgb(114, 191, 83);
-}
-.deportivas{
-    background-color: rgb(116, 68, 163);
 }
 .card-body h3{
     font-size: 35px;
