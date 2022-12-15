@@ -1,7 +1,6 @@
 /* MEDIA QUERY ----INICIO*/
 @media screen and (max-width: 1135px) {
     .mainIndex {
-
         .galeria {
             .gridGaleria {
                 margin-left: 20px;
@@ -38,11 +37,68 @@
             }
         }
     }
+    .mainProductos{
+        .presentacion{
+            div{
+                padding-top: 25px;
+                margin-top: 25px;
+                h1{
+                    font-size: 35px;
+                }
+            }
+        }
+        .row-row-cols-1-row-cols-md-3-g-4{
+            .col{
+                .card-body{
+                    .categoria{
+                        span{
+                            font-size: 12px;
+                        }
+                    }
+                    h3{
+                        font-size: 28px;
+                    }
+                }
+            }
+        }
+    }
 
     footer {
         width: auto;
         margin-top: 650px;
     }
+}
+
+@media screen and (max-width: 770px){
+    .mainProductos{
+        .presentacion{
+            div{
+                h1{
+                    font-size: 30px;
+                }
+            }
+        }
+
+        .row-row-cols-1-row-cols-md-3-g-4{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: auto;
+            gap: 5px;
+            .col{
+                .card-body{
+                    .categoria{
+                        span{
+                            font-size: 13px;
+                        }
+                    }
+                    h3{
+                        font-size: 28px;
+                    }
+                }
+            }
+        }
+    }
+    
 }
 
 @media screen and (max-width: 720px) {
@@ -71,6 +127,7 @@
         }
         }
     }
+    
 
     footer {
         width: auto;
@@ -78,6 +135,60 @@
         display: flex;
         flex-direction: column;
     }
+}
+
+@media screen and (max-width: 660px){
+    .mainProductos{
+        .presentacion{
+            div{
+
+                h1{
+                    font-size: 25px;
+                }
+            }
+        }
+        .row-row-cols-1-row-cols-md-3-g-4{
+            .col{
+                .card-body{
+                    h3{
+                        font-size: 25px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px){
+    .mainProductos{
+        .presentacion{
+            div{
+                padding-top: 30px;
+                margin-top: 30px;
+            }
+        }
+        .row-row-cols-1-row-cols-md-3-g-4{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: auto;
+            gap: 5px;
+        }
+    }
+}
+
+@media screen and (max-width: 555px) {
+    .mainProductos{
+        .presentacion{
+            div{
+                padding-top: 35px;
+                margin-top: 35px;
+                h1{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+    
 }
 
 @media screen and (max-width: 500px) {
@@ -119,6 +230,27 @@
     }
 }
 
+@media screen and (max-width: 445px) {
+    .mainProductos{
+        .presentacion{
+            div{
+                padding-top: 40px;
+                margin-top: 40px;
+                h1{
+                    font-size: 16px;
+                }
+            }
+        }
+        .row-row-cols-1-row-cols-md-3-g-4{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: auto;
+            gap: 5px;
+        }
+    }
+    
+}
+
 @media screen and (max-width: 400px) {
     .mainIndex{
         .galeria {
@@ -135,7 +267,7 @@
             height: 40px;
             width: 40px;
             div{
-                margin-top: 10px;
+                margin-top: 8px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -147,7 +279,24 @@
         }
     }
 
-    footer {
+    .footerStyleIndex {
         margin-top: 1100px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .mainProductos{
+        .presentacion{
+            div{
+                padding-top: 45px;
+                margin-top: 45px;
+                h1{
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+    .footerStyleProductos{
+        margin-top: 20px;
     }
 }
