@@ -37,25 +37,29 @@
             }
         }
     }
-    .mainProductos{
-        .presentacion{
-            div{
+
+    .mainProductos {
+        .presentacion {
+            div {
                 padding-top: 25px;
                 margin-top: 25px;
-                h1{
+
+                h1 {
                     font-size: 35px;
                 }
             }
         }
-        .row-row-cols-1-row-cols-md-3-g-4{
-            .col{
-                .card-body{
-                    .categoria{
-                        span{
+
+        .row-row-cols-1-row-cols-md-3-g-4 {
+            .col {
+                .card-body {
+                    .categoria {
+                        span {
                             font-size: 12px;
                         }
                     }
-                    h3{
+
+                    h3 {
                         font-size: 28px;
                     }
                 }
@@ -69,36 +73,38 @@
     }
 }
 
-@media screen and (max-width: 770px){
-    .mainProductos{
-        .presentacion{
-            div{
-                h1{
+@media screen and (max-width: 770px) {
+    .mainProductos {
+        .presentacion {
+            div {
+                h1 {
                     font-size: 30px;
                 }
             }
         }
 
-        .row-row-cols-1-row-cols-md-3-g-4{
+        .row-row-cols-1-row-cols-md-3-g-4 {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             grid-template-rows: auto;
             gap: 5px;
-            .col{
-                .card-body{
-                    .categoria{
-                        span{
+
+            .col {
+                .card-body {
+                    .categoria {
+                        span {
                             font-size: 13px;
                         }
                     }
-                    h3{
+
+                    h3 {
                         font-size: 28px;
                     }
                 }
             }
         }
     }
-    
+
 }
 
 @media screen and (max-width: 720px) {
@@ -112,22 +118,25 @@
                 column-gap: 10px;
             }
         }
-        .fixed{
+
+        .fixed {
             height: 75px;
             width: 75px;
-            div{
+
+            div {
                 margin-top: 15px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
-            img{
-                height: 35px;
-                width: 35px;
+
+                img {
+                    height: 35px;
+                    width: 35px;
+                }
             }
         }
-        }
     }
-    
+
 
     footer {
         width: auto;
@@ -137,20 +146,21 @@
     }
 }
 
-@media screen and (max-width: 660px){
-    .mainProductos{
-        .presentacion{
-            div{
+@media screen and (max-width: 660px) {
+    .mainProductos {
+        .presentacion {
+            div {
 
-                h1{
+                h1 {
                     font-size: 25px;
                 }
             }
         }
-        .row-row-cols-1-row-cols-md-3-g-4{
-            .col{
-                .card-body{
-                    h3{
+
+        .row-row-cols-1-row-cols-md-3-g-4 {
+            .col {
+                .card-body {
+                    h3 {
                         font-size: 25px;
                     }
                 }
@@ -159,15 +169,16 @@
     }
 }
 
-@media screen and (max-width: 600px){
-    .mainProductos{
-        .presentacion{
-            div{
+@media screen and (max-width: 600px) {
+    .mainProductos {
+        .presentacion {
+            div {
                 padding-top: 30px;
                 margin-top: 30px;
             }
         }
-        .row-row-cols-1-row-cols-md-3-g-4{
+
+        .row-row-cols-1-row-cols-md-3-g-4 {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: auto;
@@ -177,18 +188,19 @@
 }
 
 @media screen and (max-width: 555px) {
-    .mainProductos{
-        .presentacion{
-            div{
+    .mainProductos {
+        .presentacion {
+            div {
                 padding-top: 35px;
                 margin-top: 35px;
-                h1{
+
+                h1 {
                     font-size: 20px;
                 }
             }
         }
     }
-    
+
 }
 
 @media screen and (max-width: 500px) {
@@ -213,46 +225,66 @@
                 }
             }
         }
-        .fixed{
+
+        .fixed {
             height: 50px;
             width: 50px;
-            div{
+
+            div {
                 margin-top: 8px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
-            img{
-                height: 25px;
-                width: 25px;
+
+                img {
+                    height: 25px;
+                    width: 25px;
+                }
             }
-        }
         }
     }
 }
 
+@media screen and (max-width: 450px) {
+    .mainContacto {
+        .dudas {
+            h1 {
+                font-size: 25px;
+            }
+
+            form {
+                width: 350px;
+            }
+        }
+    }
+
+}
+
 @media screen and (max-width: 445px) {
-    .mainProductos{
-        .presentacion{
-            div{
+    .mainProductos {
+        .presentacion {
+            div {
                 padding-top: 40px;
                 margin-top: 40px;
-                h1{
+
+                h1 {
                     font-size: 16px;
                 }
             }
         }
-        .row-row-cols-1-row-cols-md-3-g-4{
+
+        .row-row-cols-1-row-cols-md-3-g-4 {
             display: grid;
             grid-template-columns: repeat(1, 1fr);
             grid-template-rows: auto;
             gap: 5px;
         }
     }
-    
+
 }
 
 @media screen and (max-width: 400px) {
-    .mainIndex{
+    .mainIndex {
         .galeria {
             .gridGaleria {
                 grid-template-rows: 200px;
@@ -263,19 +295,22 @@
                 }
             }
         }
-        .fixed{
+
+        .fixed {
             height: 40px;
             width: 40px;
-            div{
+
+            div {
                 margin-top: 8px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
-            img{
-                height: 20px;
-                width: 20px;
+
+                img {
+                    height: 20px;
+                    width: 20px;
+                }
             }
-        }
         }
     }
 
@@ -285,18 +320,29 @@
 }
 
 @media screen and (max-width: 360px) {
-    .mainProductos{
-        .presentacion{
-            div{
+    .mainProductos {
+        .presentacion {
+            div {
                 padding-top: 45px;
                 margin-top: 45px;
-                h1{
+
+                h1 {
                     font-size: 10px;
                 }
             }
         }
     }
-    .footerStyleProductos{
+
+    .mainContacto {
+        .dudas {
+            form {
+                width: 300px;
+            }
+        }
+    }
+
+    .footerStyleProductos {
         margin-top: 20px;
     }
+
 }
