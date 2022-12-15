@@ -435,9 +435,22 @@ footer {
     grid-template-rows: 300px 300px 300px;
     row-gap: 20px;
     column-gap: 10px; }
+  .mainNosotros .imagenNosotros div h2 {
+    font-size: 70px; }
   footer {
     width: auto;
     margin-top: 350px; } }
+
+@media screen and (max-width: 1150px) {
+  .mainNosotros .imagenNosotros div img {
+    perspective: 400px; }
+  .mainNosotros .imagenNosotros div h2 {
+    font-size: 60px; }
+  .mainNosotros .gridGaleriaUstedes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 300px 300px;
+    gap: 15px; } }
 
 @media screen and (max-width: 920px) {
   .mainIndex .navega div {
@@ -458,6 +471,23 @@ footer {
     font-size: 12px; }
   .mainProductos .row-row-cols-1-row-cols-md-3-g-4 .col .card-body h3 {
     font-size: 28px; }
+  .mainNosotros .imagenNosotros div img {
+    width: 600px;
+    height: 300px; }
+  .mainNosotros .imagenNosotros div h2 {
+    font-size: 50px; }
+  .mainNosotros .textoNosotros div p {
+    font-size: 30px; }
+  .mainNosotros .textoUstedes div h3 {
+    margin-left: 20px;
+    font-size: 30px; }
+  .mainNosotros .textoUstedes div p {
+    font-size: 25px; }
+  .mainNosotros .gridGaleriaUstedes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 300px 300px;
+    gap: 15px; }
   footer {
     width: auto;
     margin-top: 650px; } }
@@ -493,6 +523,16 @@ footer {
       .mainIndex .fixed div img {
         height: 35px;
         width: 35px; }
+  .mainNosotros .imagenNosotros div img {
+    width: 500px;
+    height: 250px; }
+  .mainNosotros .imagenNosotros div h2 {
+    font-size: 40px; }
+  .mainNosotros .gridGaleriaUstedes {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 300px;
+    gap: 15px; }
   footer {
     width: auto;
     margin-top: 1900px;
@@ -514,6 +554,13 @@ footer {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
     gap: 5px; } }
+
+@media screen and (max-width: 575px) {
+  .mainNosotros .imagenNosotros div img {
+    width: 400px;
+    height: 200px; }
+  .mainNosotros .imagenNosotros div h2 {
+    font-size: 30px; } }
 
 @media screen and (max-width: 555px) {
   .mainProductos .presentacion div {
@@ -546,7 +593,24 @@ footer {
   .mainContacto .dudas h1 {
     font-size: 25px; }
   .mainContacto .dudas form {
-    width: 350px; } }
+    width: 350px; }
+  .mainNosotros .imagenNosotros div img {
+    width: 300px;
+    height: 150px; }
+  .mainNosotros .imagenNosotros div h2 {
+    font-size: 25px; }
+  .mainNosotros .textoNosotros div p {
+    font-size: 25px; }
+  .mainNosotros .textoUstedes div h3 {
+    margin-left: 20px;
+    font-size: 25px; }
+  .mainNosotros .textoUstedes div p {
+    font-size: 20px; }
+  .mainNosotros .gridGaleriaUstedes {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 200px;
+    gap: 15px; } }
 
 @media screen and (max-width: 445px) {
   .mainProductos .presentacion div {
@@ -586,6 +650,11 @@ footer {
     margin-top: 45px; }
     .mainProductos .presentacion div h1 {
       font-size: 10px; }
+  .mainNosotros .imagenNosotros div img {
+    width: 250px;
+    height: 125px; }
+  .mainNosotros .imagenNosotros div h2 {
+    font-size: 20px; }
   .mainContacto .dudas form {
     width: 300px; }
   .footerStyleProductos {
