@@ -140,7 +140,7 @@
       justify-content: center;
       margin-bottom: 20px; }
       * .mainIndex .galeria .gridGaleria {
-        height: 650px;
+        height: 100%;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: 300px 300px;
@@ -454,14 +454,15 @@
     width: 60px;
     height: 60px; }
 
-/* MEDIA QUERY ----INICIO*/
-@media screen and (max-width: 1135px) {
+@media screen and (max-width: 1290px) {
   .mainIndex .galeria .gridGaleria {
     margin-left: 20px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 300px 300px 300px;
     row-gap: 20px;
-    column-gap: 10px; }
+    column-gap: 10px; } }
+
+@media screen and (max-width: 1135px) {
   .mainNosotros .imagenNosotros div h2 {
     font-size: 70px; }
   footer {
