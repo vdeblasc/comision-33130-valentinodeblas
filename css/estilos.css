@@ -402,7 +402,7 @@ footer {
   background-color: black;
   height: 300px;
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
   align-items: center;
   grid-area: footer; }
   footer .footerList {
@@ -419,8 +419,8 @@ footer {
     justify-content: space-around;
     border: 2px solid black; }
     footer .socialFoot a img {
-      width: 60px;
-      height: 60px; }
+      width: 30px;
+      height: 30px; }
   footer .boxDerechos {
     background-color: white;
     height: 50px;
