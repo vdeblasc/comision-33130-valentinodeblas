@@ -319,7 +319,7 @@
         font-size: 40px;
         color: white;
         font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-        text-align: justify;
+        text-align: center;
         line-height: 1.5;
         font-weight: bold; }
   * .textoUstedes div {
@@ -332,7 +332,7 @@
       font-size: 25px;
       color: white;
       font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-      text-align: justify;
+      text-align: center;
       line-height: 1.5;
       font-weight: bold;
       margin: 100px; }
@@ -359,10 +359,12 @@
       grid-row: span 2; }
     * .gridGaleriaUstedes .itemUstedes9 {
       grid-row: span 1; }
+  * .mainContacto {
+    background-image: url(../img/bg.jpg); }
   * .contacto {
     margin: 0; }
-  * .dudas h1 {
-    color: black;
+  * .dudas h2 {
+    color: white;
     text-align: center;
     margin: 0;
     font-size: 30px;
@@ -371,11 +373,10 @@
   * .dudas form {
     width: 450px;
     margin: auto;
-    background-color: #35be5a;
+    background-color: #0000007b;
     padding: 10px 20px;
     box-sizing: border-box;
-    margin-top: 20px;
-    margin-bottom: 50px; }
+    margin-top: 20px; }
     @media screen and (max-width: 480px) {
       * .dudas form .dudas form {
         width: 100%; } }
@@ -398,34 +399,60 @@
         color: white;
         padding: 20px; }
 
-footer {
-  background-color: black;
-  height: 300px;
+.footer {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #111;
+  height: auto;
+  width: 100%;
+  padding-top: 20px;
+  color: #fff; }
+
+.footerContent {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  grid-area: footer; }
-  footer .footerList {
-    background-color: white;
-    height: 75px;
-    width: 150px;
-    border: 2px solid #012c0c; }
-  footer .socialFoot {
-    background-color: white;
-    width: 200px;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    border: 2px solid black; }
-    footer .socialFoot a img {
-      width: 30px;
-      height: 30px; }
-  footer .boxDerechos {
-    background-color: white;
-    height: 50px;
-    width: 150px;
-    border: 2px solid black; }
+  justify-content: center;
+  flex-direction: column;
+  text-align: center; }
+  .footerContent h3 {
+    font-size: 2.1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 3rem; }
+  .footerContent p {
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 30px;
+    font-size: 15px;
+    color: #cacdd2; }
+
+.footer-bottom {
+  background: #000;
+  width: 100%;
+  padding: 10px;
+  padding-bottom: 30px;
+  text-align: center; }
+  .footer-bottom p {
+    float: left;
+    font-size: 14px;
+    word-spacing: 1.5px;
+    text-transform: capitalize; }
+    .footer-bottom p a {
+      color: #44bae8;
+      font-size: 16px;
+      text-transform: capitalize; }
+  .footer-bottom span {
+    text-transform: uppercase;
+    opacity: 0.4;
+    font-weight: 200; }
+
+.footerRedes {
+  display: flex;
+  justify-content: space-evenly; }
+  .footerRedes img {
+    width: 60px;
+    height: 60px; }
 
 /* MEDIA QUERY ----INICIO*/
 @media screen and (max-width: 1135px) {
@@ -438,8 +465,7 @@ footer {
   .mainNosotros .imagenNosotros div h2 {
     font-size: 70px; }
   footer {
-    width: auto;
-    margin-top: 350px; } }
+    width: auto; } }
 
 @media screen and (max-width: 1150px) {
   .mainNosotros .imagenNosotros div img {
@@ -489,8 +515,7 @@ footer {
     grid-template-rows: 300px 300px;
     gap: 15px; }
   footer {
-    width: auto;
-    margin-top: 650px; } }
+    width: auto; } }
 
 @media screen and (max-width: 770px) {
   .mainProductos .presentacion div h1 {
@@ -535,7 +560,6 @@ footer {
     gap: 15px; }
   footer {
     width: auto;
-    margin-top: 1900px;
     display: flex;
     flex-direction: column; } }
 
@@ -640,9 +664,7 @@ footer {
       justify-content: center; }
       .mainIndex .fixed div img {
         height: 20px;
-        width: 20px; }
-  .footerStyleIndex {
-    margin-top: 1100px; } }
+        width: 20px; } }
 
 @media screen and (max-width: 360px) {
   .mainProductos .presentacion div {
@@ -656,6 +678,4 @@ footer {
   .mainNosotros .imagenNosotros div h2 {
     font-size: 20px; }
   .mainContacto .dudas form {
-    width: 300px; }
-  .footerStyleProductos {
-    margin-top: 20px; } }
+    width: 300px; } }

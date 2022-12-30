@@ -460,7 +460,7 @@
                 color: $color-principal2;
                 font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
                     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-                text-align: justify;
+                text-align: center;
                 line-height: 1.5;
                 font-weight: bold;
             }
@@ -483,7 +483,7 @@
                 color: $color-principal2;
                 font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
                     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-                text-align: justify;
+                text-align: center;
                 line-height: 1.5;
                 font-weight: bold;
                 margin: 100px;
@@ -539,13 +539,16 @@
 
 
     //--------MAIN CONTACTO--------//
+    .mainContacto{
+        background-image: url(../img/bg.jpg);
+    }
     .contacto {
         margin: 0;
     }
 
     .dudas {
-        h1 {
-            color: $color-principal;
+        h2 {
+            color: $color-principal2;
             text-align: center;
             margin: 0;
             font-size: 30px;
@@ -556,11 +559,11 @@
         form {
             width: 450px;
             margin: auto;
-            background-color: #35be5a;
+            background-color: #0000007b;
             padding: 10px 20px;
             box-sizing: border-box;
             margin-top: 20px;
-            margin-bottom: 50px;
+
 
             @media screen and (max-width: 480px) {
                 .dudas form {

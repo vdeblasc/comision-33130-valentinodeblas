@@ -24,7 +24,6 @@
 
     footer {
         width: auto;
-        margin-top: 350px;
     }
 }
 
@@ -139,7 +138,6 @@
 
     footer {
         width: auto;
-        margin-top: 650px;
     }
 }
 
@@ -230,7 +228,6 @@
 
     footer {
         width: auto;
-        margin-top: 1900px;
         display: flex;
         flex-direction: column;
     }
@@ -458,9 +455,6 @@
         }
     }
 
-    .footerStyleIndex {
-        margin-top: 1100px;
-    }
 }
 
 @media screen and (max-width: 360px) {
@@ -500,8 +494,5 @@
         }
     }
 
-    .footerStyleProductos {
-        margin-top: 20px;
-    }
 
 }
